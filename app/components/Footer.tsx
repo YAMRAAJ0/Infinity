@@ -1,8 +1,14 @@
 export default function Footer() {
     return (
-        <footer className="bg-black text-white py-12">
+        <footer className="bg-black text-white py-12 relative">
+            <div className="absolute inset-0 pointer-events-none">
+                <div className="absolute inset-0 bg-black opacity-100"></div>
+                <div className="absolute inset-0 overflow-hidden">
+                    <h1 className="absolute bottom-[-50%] left-1/2 -translate-x-1/2 text-9xl md:text-[10rem] font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-300 filter blur-sm">Infinity</h1>
+                </div>
+            </div>
             <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
                     {/* Company Info */}
                     <div>
                         <h3 className="text-xl font-bold mb-4">Infinity Technologies</h3>
