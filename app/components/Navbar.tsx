@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navbar() {
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 bg-black opacity-80 shadow-lg">
@@ -14,12 +16,12 @@ export default function Navbar() {
                         </div>
                     </div>
                     <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-                        <a 
+                        <Link 
                             href="/" 
                             className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-100 hover:text-gray-500"
                         >
                             Home
-                        </a>
+                        </Link>
                         <a 
                             href="/products" 
                             className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-100 hover:text-gray-500"
